@@ -21,7 +21,7 @@ in sucession, it will read subsequent lines. Need to confirm.
 """
 
 def print_a_line(line_count, f):
-	print line_count, f.readline()
+	print line_count, f.readline(),
 
 # this line opens the file the user input when initially running the script and assigns the file object to a variable, 'current_file'
 current_file = open(input_file)

@@ -38,16 +38,21 @@ rewind(current_file)
 
 print "Let's print three lines:"
 
+# this reveals the location (in bytes) of where the computer is in the file
+print current_file.tell()
 # this line assigns a value to the variable current line
 current_line = 1
 
 # this line runs the function print_a_line on two variables, current_line (an integer) and current_file (a file object)
-print_a_line(current_line, current_file) ,
+print_a_line(current_line, current_file) , # current_line = 1
+
+print current_file.tell()
+#  this line increments the value of current line and runs the print_a_line function
+current_line += 1
+print_a_line(current_line, current_file) , # current line = 2
+print current_file.tell()
 
 #  this line increments the value of current line and runs the print_a_line function
 current_line += 1
-print_a_line(current_line, current_file) ,
-
-#  this line increments the value of current line and runs the print_a_line function
-current_line += 1
-print_a_line(current_line, current_file) ,
+print_a_line(current_line, current_file) , # current_line = 3
+print current_file.tell()

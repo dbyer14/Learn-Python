@@ -23,7 +23,6 @@ in sucession, it will read subsequent lines. Need to confirm.
 def print_a_line(line_count, f):
 	print line_count, f.readline()
 
-	
 # this line opens the file the user input when initially running the script and assigns the file object to a variable, 'current_file'
 current_file = open(input_file)
 
@@ -43,12 +42,12 @@ print "Let's print three lines:"
 current_line = 1
 
 # this line runs the function print_a_line on two variables, current_line (an integer) and current_file (a file object)
-print_a_line(current_line, current_file)
+print_a_line(current_line, current_file) ,
 
 #  this line increments the value of current line and runs the print_a_line function
-current_line = current_line + 1
-print_a_line(current_line, current_file)
+current_line += 1
+print_a_line(current_line, current_file) ,
 
 #  this line increments the value of current line and runs the print_a_line function
-current_line = current_line + 1
-print_a_line(current_line, current_file)
+current_line += 1
+print_a_line(current_line, current_file) ,
